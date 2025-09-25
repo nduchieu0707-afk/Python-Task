@@ -1,0 +1,5 @@
+print("Calculate fuel consumtion.")
+Kilo = input("Enter travel distance(kilometers): ")
+Lite = input("Enter fuel usage(liters): ")
+Consumption = (int(Kilo) / int(Lite))
+print(f"Fuel consumption is {int(Consumption)} l per 100 km")
