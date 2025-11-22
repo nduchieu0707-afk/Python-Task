@@ -2,22 +2,23 @@ def readfile(filename):
     numbers_print = []
     with open(filename, 'r') as file:
         for line in file:
-            numbers_print.append(int(line.strip()))
+            numbers_print.append(str(line.strip()))
     return numbers_print
 
 def analysis(numbers_print):
-    count = len(numbers_print)
-    total = sum(numbers_print)
-    shortest = min(numbers_print)
-    greatest = max(numbers_print)
-    average = total / count 
-    return count, shortest, greatest, average
+    total = len(numbers_print)
+    length = [len(name) for name in numbers_print]
+    shortest = min(length) if length else 0
+    greatest = max(length) if length else 0
+    summum = sum(length)
+    average = summum / total if length else 0
+    return total, length, shortest, greatest, summum, average
 
 def main():
     filename = input("Insert filename: ")
     numbers_print = readfile(filename)
-    count, shortest, greatest, average = analysis(numbers_print)
-    print(f"Count: {count}")
+    total, length, shortest, greatest, summum, average = analysis(numbers_print)
+    print(f"Count: {total}")
     print(f"Shortest: {shortest}")
     print(f"Greatest: {greatest}")
     print(f"Average: {average:.2f}")
