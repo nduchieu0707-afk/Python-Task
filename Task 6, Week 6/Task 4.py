@@ -8,10 +8,10 @@ def readfile(filename):
 def analysis(numbers_print):
     total = len(numbers_print)
     length = [len(name) for name in numbers_print]
-    shortest = min(length) if length else 0
-    greatest = max(length) if length else 0
+    shortest = min(length)
+    greatest = max(length)
     summum = sum(length)
-    average = summum / total if length else 0
+    average = summum / total
     return total, length, shortest, greatest, summum, average
 
 def main():
