@@ -14,6 +14,9 @@ def main():
         print(f"- Green {green}")
         print(f"- Blue {blue}")
         print(f"- Hex #{red:02x}{green:02x}{blue:02x}")
+        print(f"- Red {red:08b}")
+        print(f"- Green {green:08b}")
+        print(f"- Blue {blue:08b}")
         
     except (ValueError, TypeError):
         print("Couldn't perform the designed task due to the invalid input values.")
