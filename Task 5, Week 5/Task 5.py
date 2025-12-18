@@ -18,7 +18,7 @@ def main():
                 print(f"Current word - \"{current_word}\"")
         elif choice == "3":
             if current_word == "":
-                print("Current word - \"\"")
+                print("Word reversed - \"\"")
             else:
                 print(f"Word reversed - \"{current_word[::-1]}\"")
         elif choice == "0":
@@ -28,4 +28,6 @@ def main():
             print("Unknown option!")
     print("Program ending.")
 main()
+
+
 
