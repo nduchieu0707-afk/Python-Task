@@ -25,4 +25,22 @@ while running:
         else:
             print("Unknown option!")
         return None
+
     choice()
+
+# or
+# def main():
+#     numbers = 0
+#     while True:
+#         choices = int(input("your choices: "))
+#         if choices == 1:
+#             print(f"{numbers}")
+#         elif choices == 2:
+#             numbers += 1
+#             print("Increase")
+#         elif choices == 3:
+#             numbers = 0
+#             print("Clear")
+#         elif choices == 0:
+#             break
+# main()
