@@ -12,9 +12,15 @@ def main():
         if choice == "1":
             current_word = input("Insert word: ")
         elif choice == "2":
-            print(f"Current word - \"{current_word}\"")
+            if current_word == "":
+                print("Current word - \"\"")
+            else:
+                print(f"Current word - \"{current_word}\"")
         elif choice == "3":
-            print(f"Word reversed - \"{current_word[::-1]}\"")
+            if current_word == "":
+                print("Current word - \"\"")
+            else:
+                print(f"Word reversed - \"{current_word[::-1]}\"")
         elif choice == "0":
             print("Exiting program.\n")
             break
@@ -22,3 +28,4 @@ def main():
             print("Unknown option!")
     print("Program ending.")
 main()
+
